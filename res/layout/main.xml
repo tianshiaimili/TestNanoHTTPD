@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<!--     <SurfaceView
+        android:id="@+id/surface_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <teaonly.projects.droidipcam.CameraView
+        android:id="@+id/surface_overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000FF" /> -->
+
+    <SurfaceView
+        android:id="@+id/mediaPlayerSurface"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_setup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+         >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#88333333"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/resolution"
+                android:layout_width="360dip"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/res_low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="0"
+                    android:checked="true"
+                    android:text="@string/res_low" />
+
+                <RadioButton
+                    android:id="@+id/res_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="0"
+                    android:checked="false"
+                    android:text="@string/res_medium" />
+
+                <RadioButton
+                    android:id="@+id/res_high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="0"
+                    android:checked="false"
+                    android:text="@string/res_high" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dip"
+            android:layout_height="wrap_content"
+            android:background="#88333333"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="128dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:shadowColor="#FFFFFFFF"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:text="startServer"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/playButton"
+                android:layout_width="128dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:shadowColor="#FFFFFFFF"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:text="play"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+            
+            
+            <Button
+                android:id="@+id/TestNat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:shadowColor="#FFFFFFFF"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:text="testnat"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+            
+            <!--
+			<Button 
+                android:id="@+id/btn_test"
+                android:layout_height="wrap_content"
+                android:layout_width="128dip"
+                android:layout_marginLeft = "5dip"
+                android:layout_marginRight = "5dip"
+                android:textSize="12dip"
+                android:shadowColor="#FFFFFFFF"
+                android:singleLine="true"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:textStyle="bold"            
+                android:text="test"/>            -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dip"
+            android:layout_height="wrap_content"
+            android:background="#88333333"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/label_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="@string/msg_idle"
+                android:textColor="#FFFFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

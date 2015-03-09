@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <SurfaceView
+        android:id="@+id/mediaPlayerSurface"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    
+<!--     <VideoView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_margin="8dp"
+        /> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_margin="8dp" >
+
+        <ImageButton
+            android:id="@+id/panicButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:text="paly" />
+
+        <!--
+             <RatingBar
+            android:id="@+id/streamRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:stepSize="1" />
+        -->
+
+        <LinearLayout
+            android:id="@+id/veriStreamPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="18dp" >
+
+            <Button
+                android:id="@+id/paly"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="paly" />
+
+            <Button
+                android:id="@+id/testNAT"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="testNat" />
+
+            <TextView
+                android:id="@+id/veristreamTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="2dp"
+                android:text="1213" />
+        </LinearLayout>
+        
+        
+    </RelativeLayout>
+
+</FrameLayout>
